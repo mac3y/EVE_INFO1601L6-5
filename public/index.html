@@ -33,7 +33,7 @@
      </pre>
      <script>
 
-       function drawTable(records){
+      function drawTable(records){
           let result = document.querySelector('#result');
           //add html code inside of result
           let html = '';// create html string
@@ -69,8 +69,9 @@
             console.log(e);//catch and log any errors
         }
       }
-      
-      getData("https://api.openbrewerydb.org/breweries", drawTable)
+
+//get all brewery data on page load and render a table
+getData("https://api.openbrewerydb.org/breweries", drawTable)
      
      </script>
   </body>
